@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.info-bar {
+  background-color: yellow;
+  height: 60px;
+}
+
+nav {
+  height: 60px;
+  background-color: pink;
+}
+
+.jumbo {
+  height: calc( 100vh - 200px);
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+}
+
+.jumbo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.jumbo .box {
+  height: 100%;
+  width: 25%;
+  border: 1px solid yellow;
+}
+
+.jumbo .box-center {
+  width: 40%;
+}
+
+.main-navbar {
+  height: 80px;
+  background: white;
+}
+
