@@ -1,27 +1,32 @@
-.header-top {
+header {
   background-color: $headerBgd;
-  height: $heightNavInfo;
-  ul {
-    height: $heightNavInfo;
-    @include flex (row, flex-end , center);
-    list-style: none;
-    .li-box {
-      // width: 150px;
-      padding: 0 15px;
-      text-align: center;
-      i {
-        color: blue;
-      }
-      a {
-        text-decoration: none;
-        color: white;
+  .header-top {
+    ul {
+      @include flex (row, flex-end , center);
+      @include headerListStyle ($heightNavInfo);
+      .li-box {
+        @include liBoxAlignPad;
+        i {
+          color: #009cff;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }
-
-}
-
-.header-bottom {
-  height: $heightNavInfo;
-  background-color: pink;
+  .header-bottom {
+    ul {
+      @include flex (row, center , center);
+      @include headerListStyle ($heightNavInfo);
+      .li-box {
+        @include liBoxAlignPad;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+    }
+   }
+  }
 }

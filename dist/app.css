@@ -8,60 +8,74 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header-top {
+header {
   background-color: #101010;
-  height: 60px;
 }
 
-.header-top ul {
-  height: 60px;
+header .header-top ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  list-style: none;
+  text-decoration: none;
+  height: 60px;
 }
 
-.header-top ul .li-box {
+header .header-top ul .li-box {
   padding: 0 15px;
   text-align: center;
 }
 
-.header-top ul .li-box i {
-  color: blue;
+header .header-top ul .li-box i {
+  color: #009cff;
 }
 
-.header-top ul .li-box a {
+header .header-top ul .li-box a {
   text-decoration: none;
   color: white;
 }
 
-.header-bottom {
+header .header-bottom ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   height: 60px;
-  background-color: pink;
+}
+
+header .header-bottom ul .li-box {
+  padding: 0 15px;
+  text-align: center;
+}
+
+header .header-bottom ul .li-box a {
+  text-decoration: none;
+  color: white;
 }
 
 .jumbo {
   height: calc( 100vh - 200px);
   background-color: lightblue;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-position: center;
   display: flex;
-  justify-content: center;
-}
-
-.jumbo:after {
-  content: "";
-  display: table;
-  clear: both;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 70px 0px;
 }
 
 .jumbo .box {
   height: 100%;
-  width: 25%;
+  width: 430px;
   border: 1px solid yellow;
 }
 
 .jumbo .box-center {
-  width: 40%;
+  height: 100%;
+  width: 500px;
+  border: 1px solid yellow;
 }
 
 .main-navbar {

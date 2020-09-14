@@ -1,18 +1,18 @@
 .jumbo {
   height: calc( 100vh - 200px);
   background-color: lightblue;
-  display: flex;
-  justify-content: center;
-  &:after{
-    @include clearfix;
-  }
+  background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+  background-position: center;
+  @include flex (row, flex-end, center);
+  padding: 20px 70px 0px;
   .box {
-    // @include floatContainer;
     height: 100%;
-    width: 25%;
+    width: 430px;
     border: 1px solid yellow;
     &-center{
-      width: 40%;
+      height: 100%;
+      width: 500px;
+      border: 1px solid yellow;
     }
   }
 }
