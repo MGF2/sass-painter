@@ -1,28 +1,27 @@
-.info-bar {
-  background-color: yellow;
+.header-top {
+  background-color: $headerBgd;
   height: $heightNavInfo;
-}
-
-nav {
-  height: $heightNavInfo;
-  background-color: pink;
-}
-
-.jumbo {
-  height: calc( 100vh - 200px);
-  background-color: lightblue;
-  display: flex;
-  justify-content: center;
-  &:after{
-    @include clearfix;
-  }
-  .box {
-    // @include floatContainer;
-    height: 100%;
-    width: 25%;
-    border: 1px solid yellow;
-    &-center{
-      width: 40%;
+  ul {
+    height: $heightNavInfo;
+    @include flex (row, flex-end , center);
+    list-style: none;
+    .li-box {
+      // width: 150px;
+      padding: 0 15px;
+      text-align: center;
+      i {
+        color: blue;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
+
+}
+
+.header-bottom {
+  height: $heightNavInfo;
+  background-color: pink;
 }

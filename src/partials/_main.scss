@@ -1,3 +1,22 @@
+.jumbo {
+  height: calc( 100vh - 200px);
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  &:after{
+    @include clearfix;
+  }
+  .box {
+    // @include floatContainer;
+    height: 100%;
+    width: 25%;
+    border: 1px solid yellow;
+    &-center{
+      width: 40%;
+    }
+  }
+}
+
 .main-navbar {
   height: 80px;
   background: white;

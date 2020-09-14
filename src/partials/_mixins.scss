@@ -7,3 +7,10 @@
 @mixin floatContainer {
   float: left;
 }
+
+@mixin flex ($flexDirection,$justContent,$alignItems){
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justContent;
+  align-items: $alignItems;
+}
