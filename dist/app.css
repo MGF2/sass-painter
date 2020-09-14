@@ -57,6 +57,7 @@ header .header-bottom ul .li-box a {
 .jumbo {
   height: calc( 100vh - 200px);
   background-color: lightblue;
+  color: white;
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
   background-position: center;
   display: flex;
@@ -68,18 +69,76 @@ header .header-bottom ul .li-box a {
 
 .jumbo .box {
   height: 100%;
-  width: 430px;
+  width: 400px;
   border: 1px solid yellow;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+}
+
+.jumbo .box .box-row {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: bottom;
+}
+
+.jumbo .box .box-row .mb {
+  border: 1px solid pink;
 }
 
 .jumbo .box-center {
-  height: 100%;
-  width: 500px;
-  border: 1px solid yellow;
+  width: 530px;
+}
+
+.jumbo .box-center h1 {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.jumbo .box-center h2 {
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+.jumbo .box-center ul {
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.jumbo .box-center ul li {
+  padding-bottom: 15px;
+}
+
+.jumbo .box-center ul li i {
+  padding-right: 10px;
+  font-size: 15px;
+  color: gray;
 }
 
 .main-navbar {
   height: 80px;
   background: white;
+}
+
+.btn-download {
+  color: white;
+  background-color: #666666;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-download .download {
+  text-align: left;
+  border-right: 1px solid white;
+  display: inline-block;
+  padding-right: 12px;
+}
+
+.btn-download i {
+  padding-left: 10px;
+  font-size: 25px;
 }
 

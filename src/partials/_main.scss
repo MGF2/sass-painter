@@ -1,18 +1,47 @@
 .jumbo {
   height: calc( 100vh - 200px);
   background-color: lightblue;
+  color: white;
   background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
   background-position: center;
   @include flex (row, flex-end, center);
   padding: 20px 70px 0px;
   .box {
     height: 100%;
-    width: 430px;
+    width: 400px;
     border: 1px solid yellow;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    .box-row {
+      height: 100px;
+      @include flex (row, space-between,bottom);
+      .mb {
+        border: 1px solid pink;
+      }
+    }
     &-center{
-      height: 100%;
-      width: 500px;
-      border: 1px solid yellow;
+      // height: 100%;
+      width: 530px;
+      h1 {
+        font-size: $fontSizeH1;
+        padding: 20px 0;
+      }
+      h2 {
+        font-size: $fontSizeH2;
+        padding-bottom: 20px;
+      }
+      ul {
+        list-style: none;
+        padding-bottom: 15px;
+        li {
+          padding-bottom: 15px;
+          i {
+            padding-right: 10px;
+            font-size: 15px;
+            color: gray;
+          }
+        }
+      }
     }
   }
 }
